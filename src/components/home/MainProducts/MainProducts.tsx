@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import styles from './MainProducts.module.css';
-import { getProducts } from 'app/services/fakestore';
 
 export const MainProducts = async () => {
-  const products: Product[] = await getProducts();
+  const response = await fetch('http://localhost:3000/api');
+  const { products }: { products: Product[] } = await response.json();
 
   return (
     <section>
