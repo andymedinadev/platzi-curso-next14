@@ -1,4 +1,4 @@
-import { getProducts } from 'app/services/fakestore';
+import { getProducts } from 'app/services/fakestore/products';
 
 export async function GET() {
   const products = await getProducts();
