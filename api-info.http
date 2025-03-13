@@ -1,0 +1,17 @@
+GET     https://fakestoreapi.com/products
+###
+GET     https://fakestoreapi.com/products/1
+###
+GET     https://fakestoreapi.com/products/categories
+###
+GET     https://fakestoreapi.com/products/category/jewelery
+###
+GET     https://fakestoreapi.com/carts?userId=1
+###
+GET     https://fakestoreapi.com/products?limit=5
+
+
+### POST    https://fakestoreapi.com/products
+### PUT     https://fakestoreapi.com/products/1
+### PATCH   https://fakestoreapi.com/products/1
+### DELETE  https://fakestoreapi.com/products/1
