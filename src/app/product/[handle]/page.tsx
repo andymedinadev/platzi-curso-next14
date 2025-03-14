@@ -8,6 +8,19 @@ interface ProductPageProps {
   };
 }
 
+export async function generateMetadata({ searchParams }: ProductPageProps) {
+  const id = searchParams.id;
+  const product = await getProduct(id);
+
+  return {
+    title: product.title,
+    description: product.description,
+    openGraph: {
+      images: [product.image],
+    },
+  };
+}
+
 export default async function ProductPage(props: ProductPageProps) {
   const id = props.searchParams.id;
 
