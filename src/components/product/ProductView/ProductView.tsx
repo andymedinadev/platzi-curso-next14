@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 import { ProductViewItemsOrder } from './ProductViewItemsOrder';
 import styles from './ProductView.module.css';
 
