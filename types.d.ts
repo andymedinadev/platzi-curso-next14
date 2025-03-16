@@ -17,3 +17,10 @@ interface Rating {
   rate: number;
   count: number;
 }
+
+type CartItem = {
+  title: string;
+  price: number;
+  quantity: number;
+  id: number;
+};
