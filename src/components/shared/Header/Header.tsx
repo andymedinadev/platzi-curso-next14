@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ShoppingCart } from '../ShoppingCart';
 import styles from './Header.module.css';
 
 export const Header = () => {
@@ -16,6 +17,7 @@ export const Header = () => {
       </nav>
       <div className={styles.header__user}>
         <p>Hola! userName</p>
+        <ShoppingCart />
       </div>
     </header>
   );
