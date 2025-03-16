@@ -1,6 +1,8 @@
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { ShoppingCart } from '../ShoppingCart';
 import styles from './Header.module.css';
+
+const NoSSRShoppingCart = dynamic(() => import('../ShoppingCart'), { ssr: false });
 
 export const Header = () => {
   return (
@@ -17,7 +19,7 @@ export const Header = () => {
       </nav>
       <div className={styles.header__user}>
         <p>Hola! userName</p>
-        <ShoppingCart />
+        <NoSSRShoppingCart />
       </div>
     </header>
   );

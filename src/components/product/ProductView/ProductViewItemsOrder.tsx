@@ -10,7 +10,7 @@ interface ProductViewItemsOrderProps {
 }
 
 export const ProductViewItemsOrder = ({ maxQuantity, product }: ProductViewItemsOrderProps) => {
-  const { title, id, price } = product;
+  const { title, id, price, image } = product;
   const [counter, setCounter] = useState(1);
   const { addToCart } = useShoppingCart();
 
@@ -22,6 +22,7 @@ export const ProductViewItemsOrder = ({ maxQuantity, product }: ProductViewItems
       price,
       quantity: counter,
       title,
+      image,
     });
   };
 

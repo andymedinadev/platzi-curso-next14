@@ -19,8 +19,9 @@ interface Rating {
 }
 
 type CartItem = {
-  title: string;
+  id: number;
+  image: string;
   price: number;
   quantity: number;
-  id: number;
+  title: string;
 };
