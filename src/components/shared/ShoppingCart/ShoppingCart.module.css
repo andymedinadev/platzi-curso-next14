@@ -25,3 +25,27 @@
   height: 1.25rem;
   fill: var(--text-color);
 }
+
+.shoppingCart__items {
+  position: absolute;
+  background: var(--color-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  right: 0;
+  top: 5rem;
+  max-width: 320px;
+  min-width: 250px;
+  padding: 1rem;
+  padding-top: 0rem;
+}
+
+.shoppingCart__buyButton {
+  background: var(--main-contrast);
+  color: var(--text-color);
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
