@@ -1,7 +1,9 @@
+import styles from './Footer.module.css';
+
 export const Footer = () => {
   return (
-    <footer>
-      <p>Future World</p>
+    <footer className={styles.footer}>
+      <p>Future World © {new Date().getFullYear()}</p>
     </footer>
   );
 };
